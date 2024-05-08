@@ -1,9 +1,26 @@
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
+import './App.css';
+
 function App() {
+  const [language, setLanguage] = useState('en');
+
+  const handleChangeLanguage = () => {
+    setLanguage(language === 'en' ? 'es' : 'en');
+  };
+
   return (
-    <main className='font-roboto flex justify-center items-center w-screen h-screen'>
-      <h1 className='text-3xl font-bold text-red-700'>Hello Word</h1>
-    </main>
-  )
+    <div className="App">
+      <header className="App-header">
+        <button className="language-button" onClick={handleChangeLanguage}>
+          Change Language
+        </button>
+      </header>
+      <p>
+        {language === 'en' ? 'Hello, World!' : '¡Hola, Mundo!'}
+      </p>
+    </div>
+  );
 }
 
-export default App
+export default App;
