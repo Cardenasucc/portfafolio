@@ -11,12 +11,6 @@ import './css/responsive.css';
 import { useTranslation } from 'react-i18next';
 import './i18n.ts';
 
-
-
-
-
-
-
 function Header() {
   const { t, i18n } = useTranslation(); // Hook useTranslation para acceder a las traducciones
 
@@ -43,7 +37,7 @@ function Header() {
               <nav className="navpage text-left">
                 <ul className="navpage__wrap">
                   <li className="navpage__list">
-                    <img src="/dist/assets/casablanca.png" alt="Home" className="home-logo" />
+                    <img src="/dist/images/casablanca.png" alt="Home" className="home-logo" />
                     <a href="#sectionhero" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('SKILLS')}</a>
                   </li>
                   <li className="navpage__list"><a href="#aboutsection" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('PROJECTS')}</a></li>
@@ -106,7 +100,7 @@ function MainWrap() {
             </div>
             <div className="col-lg-6 text-center order-0 order-lg-1 mb-5 mb-lg-0">
               <div className="heroimg">
-                <img src="/dist/assets/yopng.jpg" alt="poto" className="img-fluid heroimg__poto" />
+                <img src="/dist/images/yopng.jpg" alt="poto" className="img-fluid heroimg__poto" />
               </div>
             </div>
           </div>
@@ -165,35 +159,35 @@ function Service() {
 
   const logoData = [
     {
-      image: '../dist/assets/dist/assets/page/js.png',
+      image: '/dist/images/js.png',
     },
     {
-      image: '../dist/assets/GitHub.png',
+      image: '/dist/images/GitHub.png',
     },
     {
-      image: '../dist/assets/python.png',
+      image: '/dist/images/python.png',
     },
     {
-      image: '../dist/assets/css.png',
+      image: '/dist/images/css.png',
     },
     {
-      image: '../dist/assets/psql.png',
+      image: '/dist/images/psql.png',
     },
     {
-      image: '../dist/assets/mysql.png',
+      image: '/dist/images/mysql.png',
     },
   ];
 
   // Datos para la sección de proyectos
   const projectsData = [
     {
-      image: '../dist/assets/project1.jpg',
+      image: '/dist/images/project1.jpg',
     },
     {
-      image: '../dist/assets/project2.jpg',
+      image: '/dist/images/project2.jpg',
     },
     {
-      image: '../dist/assets/project3.jpg',
+      image: '../dist/images/project3.jpg',
     },
   ];
 
