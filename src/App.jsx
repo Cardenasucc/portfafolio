@@ -319,23 +319,6 @@ function Service() {
         </div>
       </div>
       {/* Fin de la sección de cuadros 3x2 de logos */}
-
-      {/* Sección "Mis Proyectos" con tabla 3x3 de imágenes en recuadros grises */}
-      <div className="projects-section sectionblock">
-        <div className="container">
-          <h2>{t('Mis Proyectos')}</h2>
-          <div className="row">
-            {projectsData.map((project, index) => (
-              <div key={index} className="col-lg-4 mb-4">
-                <div className="square bg-gray-900 text-white p-4">
-                  <img src={project.image} alt={`Project ${index + 1}`} className="img-fluid" style={{ maxWidth: '100%' }} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      {/* Fin de la sección "Mis Proyectos" */}
     </main>
   );
 }
