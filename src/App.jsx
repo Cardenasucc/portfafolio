@@ -10,6 +10,7 @@ import './css/main.css';
 import './css/responsive.css';
 import { useTranslation } from 'react-i18next';
 import './i18n.ts';
+import '../dist/assets';
 
 
 
@@ -43,7 +44,7 @@ function Header() {
               <nav className="navpage text-left">
                 <ul className="navpage__wrap">
                   <li className="navpage__list">
-                    <img src="src\assets\page\casablanca.png" alt="Home" className="home-logo" />
+                    <img src="/dist/assets/casablanca.png" alt="Home" className="home-logo" />
                     <a href="#sectionhero" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('SKILLS')}</a>
                   </li>
                   <li className="navpage__list"><a href="#aboutsection" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('PROJECTS')}</a></li>
@@ -54,7 +55,7 @@ function Header() {
             <div className="col-lg-3 text-right d-none d-lg-block">
               <button className="btn btn-contact" style={{ fontSize: '14px', color: '#ffffff' }}>{t('contactMe')}</button>
               <img 
-                src="src/assets/page/mundo.png" 
+                src="/dist/assets/mundo.png" 
                 alt="Change Language" 
                 className="language-icon ml-2" 
                 onClick={handleChangeLanguage} 
@@ -106,7 +107,7 @@ function MainWrap() {
             </div>
             <div className="col-lg-6 text-center order-0 order-lg-1 mb-5 mb-lg-0">
               <div className="heroimg">
-                <img src="src\assets\page\yopng.jpg" alt="poto" className="img-fluid heroimg__poto" />
+                <img src="/dist/assets/yopng.jpg" alt="poto" className="img-fluid heroimg__poto" />
               </div>
             </div>
           </div>
@@ -163,7 +164,6 @@ function MainWrap() {
 function Service() {
   const { t } = useTranslation(); // Hook useTranslation para acceder a las traducciones
 
-  // Datos para los cuadros de logos
   const logoData = [
     {
       image: '../dist/assets/dist/assets/page/js.png',
@@ -218,7 +218,7 @@ function Service() {
               <div className="row">
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="src/assets/page/github.png" alt="Github" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src="/dist/assets/GitHub.png" alt="Github" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>Github</h4>
                       <p>Here you can contact me</p>
@@ -227,7 +227,7 @@ function Service() {
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="src/assets/page/linkedln.png" alt="LinkedIn" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src="/dist/assets/linkedln.png" alt="LinkedIn" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>LinkedIn</h4>
                       <p>Here you can contact me</p>
@@ -236,7 +236,7 @@ function Service() {
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="src\assets\page\Hotmail.png" alt="Contact" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src="/dist/assets/Hotmail.png" alt="Contact" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>{t('Hotmail')}</h4>
                       <p>Here you can contact me</p>
@@ -245,7 +245,7 @@ function Service() {
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="src\assets\page\instagram.png" alt="Instagram" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src="/dist/assets/instagram.png" alt="Instagram" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>Instagram</h4>
                       <p>Here you can contact me</p>
@@ -272,12 +272,12 @@ function Service() {
               <p>
                 El 3 de enero en la ciudad de San Juan de Pasto se lleva a cabo el Desfile Colectivo Coreográfico, el cual es una gira de más de ocho mil artistas, quienes participan en su presentación del canto a la tierra, del cual he participado durante 5 años seguidos en diferentes colectivos coreograficos
               </p>
-              <img src="src\assets\page\deividcarnaval.jpg" alt="Image 1" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
+              <img src="/dist/assets/deividcarnaval.jpg" alt="Image 1" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
               <p className="text-muted">Black and white carnival San Juan de Pasto January 3</p>
             </div>
             {/* Imagen a la derecha, texto pequeño debajo y texto a la derecha */}
             <div className="col-lg-6 mb-4 order-lg-1">
-              <img src="src/assets/page/skull.jpg" alt="Image 2" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
+              <img src="/dist/assets/skull.jpg" alt="Image 2" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
               <p className="text-muted">Dibujos</p>
               <p>
                 El arte del dibujo es también otra afición que suelo tener en mi tiempo libre, ya que gracias al dibujo he encontrado una forma de despejar la mente y descubrir nuevas ideas al dibujar..
