@@ -11,18 +11,19 @@ import './css/responsive.css';
 import { useTranslation } from 'react-i18next';
 import './i18n.ts';
 import casablanca from "../src/assets/image/casablanca.png"
-import yo from "../src/assets/image/yopng.png"
-import deividcarnaval from "../src/assets/image/deividcarnaval.png"
+import yo from "../src/assets/image/yopng.jpg"
+import deividcarnaval from "../src/assets/image/deividcarnaval.jpg"
 import css from "../src/assets/image/css.png"
-import Github from "../src/assets/image/github.png"
-import Hotmail from "../src/assets/image/hotmail.png"
+import Github from "../src/assets/image/GitHub.png"
+import Hotmail from "../src/assets/image/Hotmail.png"
 import instagram from "../src/assets/image/instagram.png"
-import js from "../src/assets/image/js.png"
 import linkedln from "../src/assets/image/linkedln.png"
+import skull from "../src/assets/image/skull.jpg"
+import js from "../src/assets/image/js.png"
 import mysql from "../src/assets/image/mysql.png"
 import psql from "../src/assets/image/psql.png"
 import python from "../src/assets/image/python.png"
-import skull from "../src/assets/image/skull.jpg"
+
 
 function Header() {
   const { t, i18n } = useTranslation(); // Hook useTranslation para acceder a las traducciones
@@ -44,10 +45,9 @@ function Header() {
               <nav className="navpage text-left">
                 <ul className="navpage__wrap">
                   <li className="navpage__list">
-                    <img src={casablanca} alt="Home" className="home-logo" />
-                    <a href="#sectionhero" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('SKILLS')}</a>
+                    <a href="#sectionhero" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('PORTAFOLIO')}</a>
                   </li>
-                  <li className="navpage__list"><a href="#aboutsection" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('PROJECTS')}</a></li>
+                  <li className="navpage__list"><a href="#aboutsection" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}></a></li>
                 </ul>
               </nav>
             </div>
@@ -60,8 +60,6 @@ function Header() {
         <div className="overlay__navigation">
           <ul className="overlay__listnav">
             <li className="navpage__list"><a href="#sectionhero" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('skills')}</a></li>
-            <li className="navpage__list"><a href="#aboutsection" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('project')}</a></li>
-            <li className="navpage__list"><a href="#contactsection" className="navpage__link" style={{ fontSize: '18px' }}>{t('contact')}</a></li>
           </ul>
         </div>
       </div>
@@ -74,7 +72,7 @@ function Header() {
 
  
 function MainWrap() {
-  const { t } = useTranslation(); // Hook useTranslation para acceder a las traducciones
+  const { t } = useTranslation();
 
   return (
     <main id="mainwrap">
@@ -151,28 +149,29 @@ function MainWrap() {
 }
 
 function Service() {
-  const { t } = useTranslation(); // Hook useTranslation para acceder a las traducciones
+  const { t } = useTranslation();
 
   const logoData = [
     {
-      image: {js},
+      image: js,
     },
     {
-      image: {Github},
+      image: Github,
     },
     {
-      image: {python},
+      image: python,
     },
     {
-      image: {css},
+      image: css,
     },
     {
-      image: {psql},
+      image: psql,
     },
     {
-      image: {mysql},
+      image: mysql,
     },
   ];
+
 
   return (
     <main id="mainwrap">
@@ -279,22 +278,6 @@ function Service() {
       </div>
       {/* Fin de la sección de cuadros 3x2 de logos */}
 
-      {/* Sección "Mis Proyectos" con tabla 3x3 de imágenes en recuadros grises */}
-      <div className="projects-section sectionblock">
-        <div className="container">
-          <h2>{t('Mis Proyectos')}</h2>
-          <div className="row">
-            {projectsData.map((project, index) => (
-              <div key={index} className="col-lg-4 mb-4">
-                <div className="square bg-gray-900 text-white p-4">
-                  <img src={project.image} alt={`Project ${index + 1}`} className="img-fluid" style={{ maxWidth: '100%' }} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      {/* Fin de la sección "Mis Proyectos" */}
     </main>
   );
 }
