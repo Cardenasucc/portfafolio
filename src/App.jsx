@@ -196,24 +196,6 @@ function Service() {
     {
       image: 'src/assets/page/project3.jpg',
     },
-    {
-      image: 'src/assets/page/project4.jpg',
-    },
-    {
-      image: 'src/assets/page/project5.jpg',
-    },
-    {
-      image: 'src/assets/page/project6.jpg',
-    },
-    {
-      image: 'src/assets/page/project7.jpg',
-    },
-    {
-      image: 'src/assets/page/project8.jpg',
-    },
-    {
-      image: 'src/assets/page/project9.jpg',
-    },
   ];
 
   return (
@@ -223,13 +205,14 @@ function Service() {
         <div className="container">
           <div className="row">
             {/* Contenido a la izquierda */}
-            <div className="col-lg-4 text-center text-lg-left">
-              <div className="abouthero">
-                <h3>{t('You can ')}</h3>
-                <h3>{t('contact me')}</h3>
-                <p>{t('Here you can find my projects')}</p>
-              </div>
+            <div className="col-lg-4 text-center text-lg-left d-flex align-items-center">
+                <div className="abouthero">
+                    <h3>{t('You can ')}</h3>
+                    <h3>{t('contact me')}</h3>
+                    <p>{t('Here you can find my projects')}</p>
+                </div>
             </div>
+
             {/* Cuadros 2x2 a la derecha */}
             <div className="col-lg-8">
               <div className="row">
@@ -281,8 +264,8 @@ function Service() {
         <div className="container">
           <div className="row">
             {/* Título */}
-            <div className="col-lg-12">
-              <h2>About Us</h2>
+            <div className="col-lg-12 mb-6 px-9">
+              <h1>About Us</h1>
             </div>
             {/* Texto a la izquierda, imagen a la izquierda y texto pequeño debajo */}
             <div className="col-lg-6 mb-4 order-lg-2">
@@ -319,6 +302,23 @@ function Service() {
         </div>
       </div>
       {/* Fin de la sección de cuadros 3x2 de logos */}
+
+      {/* Sección "Mis Proyectos" con tabla 3x3 de imágenes en recuadros grises */}
+      <div className="projects-section sectionblock">
+        <div className="container">
+          <h2>{t('Mis Proyectos')}</h2>
+          <div className="row">
+            {projectsData.map((project, index) => (
+              <div key={index} className="col-lg-4 mb-4">
+                <div className="square bg-gray-900 text-white p-4">
+                  <img src={project.image} alt={`Project ${index + 1}`} className="img-fluid" style={{ maxWidth: '100%' }} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* Fin de la sección "Mis Proyectos" */}
     </main>
   );
 }

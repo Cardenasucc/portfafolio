@@ -158,7 +158,7 @@
     }
     /*
 * ----------------------------------------------------------------------------------------
-* 02.HEADER SECTION. 
+* 02.HEADER SECTION.
 - navigation
 * ----------------------------------------------------------------------------------------
 */
@@ -375,6 +375,27 @@
         letter-spacing: 1px;
         font-weight: 700;
     }
+
+    .texto-grande-1, .texto-grande-2, .texto-grande-3 {
+        font-size: 30px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    
+    /* Texto mediano */
+    .texto-mediano-1, .texto-mediano-2, .texto-mediano-3 {
+        font-size: 24px;
+        margin-bottom: 15;
+        text-align: left;
+    }
+    
+    /* Texto pequeño */
+    .texto-pequeno-1, .texto-pequeno-2, .texto-pequeno-3 {
+        font-size: 14px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
     /*
 * ----------------------------------------------------------------------------------------
 * 05.SERVICE SECTION. 
@@ -412,7 +433,7 @@
     }
     /*
 * ----------------------------------------------------------------------------------------
-* 06.PORTFOLIO SECTION. 
+* 06.PORTFOLIO SECTION.
 * ----------------------------------------------------------------------------------------
 */
     
@@ -548,7 +569,7 @@
     }
     /*
 * ----------------------------------------------------------------------------------------
-* 08.FOOTER SECTION. 
+* 08.FOOTER SECTION.
 * ----------------------------------------------------------------------------------------
 */
     
@@ -562,46 +583,46 @@
       }
       
       .header-main {
-        background-color: #1F2937; /* o cualquier color de fondo que prefieras */
-        border-bottom: 1px solid #ddd; /* opcional, para agregar una línea debajo */
+        background-color: #1F2937;
+        border-bottom: 1px solid #ddd;
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 1000; /* asegurarse de que esté por encima de otros elementos */
+        z-index: 1000;
       }
       
       .navpage__link {
-        color: #FFF; /* color base de los enlaces */
+        color: #FFF;
         text-decoration: none;
         padding: 10px;
       }
       
       .navpage__link:hover {
-        color: #000; /* mantener el color base en hover */
+        color: #000;
       }
       
       .btn-contact {
-        background-color: #fff; /* color blanco */
-        color: #000; /* color base */
+        background-color: #fff;
+        color: #000;
         border: none;
         padding: 10px 20px;
         cursor: pointer;
       }
       
       .btn-contact:hover {
-        background-color: #fff; /* mantener el color blanco en hover */
-        color: #000; /* mantener el color base en hover */
+        background-color: #fff;
+        color: #000;
       }
       
       .language-icon {
         cursor: pointer;
         margin-left: 10px;
-        width: 30px; /* ajusta el ancho */
-        height: 30px; /* ajusta la altura */
+        width: 30px;
+        height: 30px;
       }
       
       .home-logo {
-        width: 20px; /* ajusta el tamaño del logo según sea necesario */
+        width: 20px;
         margin-right: 10px;
         vertical-align: middle;
       }
