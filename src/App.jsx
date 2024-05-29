@@ -31,13 +31,12 @@ function Header() {
               <nav className="navpage text-left">
                 <ul className="navpage__wrap">
                   <li className="navpage__list">
-                    <img src="/dist/images/casablanca.png" alt="Home" className="home-logo" />
+                    <img src="../dist/image/casablanca.png" alt="Home" className="home-logo" />
                     <a href="#sectionhero" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('SKILLS')}</a>
                   </li>
                   <li className="navpage__list"><a href="#aboutsection" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('PROJECTS')}</a></li>
                 </ul>
               </nav>
-              {/* end navigation desktop */}
             </div>
           </div>
         </div>
