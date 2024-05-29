@@ -100,7 +100,7 @@ function MainWrap() {
             </div>
             <div className="col-lg-6 text-center order-0 order-lg-1 mb-5 mb-lg-0">
               <div className="heroimg">
-                <img src="/dist/image/yopng.jpg" alt="poto" className="img-fluid heroimg__poto" />
+                <img src="/src/assets/image/yopng.jpg" alt="poto" className="img-fluid heroimg__poto" />
               </div>
             </div>
           </div>
