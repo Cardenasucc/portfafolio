@@ -11,6 +11,18 @@ import './css/responsive.css';
 import { useTranslation } from 'react-i18next';
 import './i18n.ts';
 import casablanca from "../src/assets/image/casablanca.png"
+import yo from "../src/assets/image/yopng.png"
+import deividcarnaval from "../src/assets/image/deividcarnaval.png"
+import css from "../src/assets/image/css.png"
+import Github from "../src/assets/image/github.png"
+import Hotmail from "../src/assets/image/hotmail.png"
+import instagram from "../src/assets/image/instagram.png"
+import js from "../src/assets/image/js.png"
+import linkedln from "../src/assets/image/linkedln.png"
+import mysql from "../src/assets/image/mysql.png"
+import psql from "../src/assets/image/psql.png"
+import python from "../src/assets/image/python.png"
+import skull from "../src/assets/image/skull.jpg"
 
 function Header() {
   const { t, i18n } = useTranslation(); // Hook useTranslation para acceder a las traducciones
@@ -84,7 +96,7 @@ function MainWrap() {
             </div>
             <div className="col-lg-6 text-center order-0 order-lg-1 mb-5 mb-lg-0">
               <div className="heroimg">
-                <img src="/src/assets/image/yopng.jpg" alt="poto" className="img-fluid heroimg__poto" />
+                <img src={yo} alt="poto" className="img-fluid heroimg__poto" />
               </div>
             </div>
           </div>
@@ -143,35 +155,22 @@ function Service() {
 
   const logoData = [
     {
-      image: '/dist/images/js.png',
+      image: {js},
     },
     {
-      image: '/dist/images/GitHub.png',
+      image: {Github},
     },
     {
-      image: '/dist/images/python.png',
+      image: {python},
     },
     {
-      image: '/dist/images/css.png',
+      image: {css},
     },
     {
-      image: '/dist/images/psql.png',
+      image: {psql},
     },
     {
-      image: '/dist/images/mysql.png',
-    },
-  ];
-
-  // Datos para la sección de proyectos
-  const projectsData = [
-    {
-      image: '/dist/images/project1.jpg',
-    },
-    {
-      image: '/dist/images/project2.jpg',
-    },
-    {
-      image: '/dist/images/project3.jpg',
+      image: {mysql},
     },
   ];
 
@@ -195,7 +194,7 @@ function Service() {
               <div className="row">
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="/dist/assets/GitHub.png" alt="Github" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src={Github} alt="Github" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>Github</h4>
                       <p>Here you can contact me</p>
@@ -204,7 +203,7 @@ function Service() {
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="/dist/assets/linkedln.png" alt="LinkedIn" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src={linkedln} alt="LinkedIn" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>LinkedIn</h4>
                       <p>Here you can contact me</p>
@@ -213,7 +212,7 @@ function Service() {
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="/dist/assets/Hotmail.png" alt="Contact" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src={Hotmail} alt="Contact" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>{t('Hotmail')}</h4>
                       <p>Here you can contact me</p>
@@ -222,7 +221,7 @@ function Service() {
                 </div>
                 <div className="col-lg-6 mb-4">
                   <div className="square bg-gray-900 text-white p-4 d-flex align-items-center">
-                    <img src="/dist/assets/instagram.png" alt="Instagram" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
+                    <img src={instagram} alt="Instagram" className="img-fluid icon mr-3" style={{ maxWidth: '30%' }} />
                     <div>
                       <h4>Instagram</h4>
                       <p>Here you can contact me</p>
@@ -249,12 +248,12 @@ function Service() {
               <p>
                 El 3 de enero en la ciudad de San Juan de Pasto se lleva a cabo el Desfile Colectivo Coreográfico, el cual es una gira de más de ocho mil artistas, quienes participan en su presentación del canto a la tierra, del cual he participado durante 5 años seguidos en diferentes colectivos coreograficos
               </p>
-              <img src="/dist/assets/deividcarnaval.jpg" alt="Image 1" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
+              <img src={deividcarnaval} alt="Image 1" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
               <p className="text-muted">Black and white carnival San Juan de Pasto January 3</p>
             </div>
             {/* Imagen a la derecha, texto pequeño debajo y texto a la derecha */}
             <div className="col-lg-6 mb-4 order-lg-1">
-              <img src="/dist/assets/skull.jpg" alt="Image 2" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
+              <img src={skull} alt="Image 2" className="img-fluid mb-3" style={{ maxWidth: '65%' }} />
               <p className="text-muted">Dibujos</p>
               <p>
                 El arte del dibujo es también otra afición que suelo tener en mi tiempo libre, ya que gracias al dibujo he encontrado una forma de despejar la mente y descubrir nuevas ideas al dibujar..
