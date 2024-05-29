@@ -166,35 +166,35 @@ function Service() {
   // Datos para los cuadros de logos
   const logoData = [
     {
-      image: 'src/assets/page/js.png',
+      image: '../dist/assets/dist/assets/page/js.png',
     },
     {
-      image: 'src/assets/page/GitHub.png',
+      image: '../dist/assets/GitHub.png',
     },
     {
-      image: 'src/assets/page/python.png',
+      image: '../dist/assets/python.png',
     },
     {
-      image: 'src/assets/page/css.png',
+      image: '../dist/assets/css.png',
     },
     {
-      image: 'src/assets/page/psql.png',
+      image: '../dist/assets/psql.png',
     },
     {
-      image: 'src/assets/page/mysql.png',
+      image: '../dist/assets/mysql.png',
     },
   ];
 
   // Datos para la sección de proyectos
   const projectsData = [
     {
-      image: 'src/assets/page/project1.jpg',
+      image: '../dist/assets/project1.jpg',
     },
     {
-      image: 'src/assets/page/project2.jpg',
+      image: '../dist/assets/project2.jpg',
     },
     {
-      image: 'src/assets/page/project3.jpg',
+      image: '../dist/assets/project3.jpg',
     },
   ];
 
