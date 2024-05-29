@@ -10,7 +10,7 @@ import './css/main.css';
 import './css/responsive.css';
 import { useTranslation } from 'react-i18next';
 import './i18n.ts';
-import casablanca from  "../dist/images/casablanca.png";
+
 
 function Header() {
   const { t, i18n } = useTranslation(); // Hook useTranslation para acceder a las traducciones
@@ -29,16 +29,32 @@ function Header() {
         <div className="container">
           <div className="row headerwrap align-items-center">
             <div className="col-xs-12 col-md-12 col-lg-9">
+              {/* navigation icon */}
+              <div className="navicon d-block d-lg-none">
+                <div className="navicon__bar"></div>
+              </div>
+              {/* end navigation icon */}
+              {/* navigation desktop */}
               <nav className="navpage text-left">
                 <ul className="navpage__wrap">
                   <li className="navpage__list">
-                    <img src={casablanca} alt="Home" className="home-logo" />
+                    <img src="/dist/images/casablanca.png" alt="Home" className="home-logo" />
                     <a href="#sectionhero" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('SKILLS')}</a>
                   </li>
                   <li className="navpage__list"><a href="#aboutsection" className="navpage__link" style={{ fontSize: '18px', color: '#ffffff' }}>{t('PROJECTS')}</a></li>
                 </ul>
               </nav>
               {/* end navigation desktop */}
+            </div>
+            <div className="col-lg-3 text-right d-none d-lg-block">
+              <button className="btn btn-contact" style={{ fontSize: '14px', color: '#ffffff' }}>{t('contactMe')}</button>
+              <img 
+                src="/dist/assets/mundo.png" 
+                alt="Change Language" 
+                className="language-icon ml-2" 
+                onClick={handleChangeLanguage} 
+                style={{ width: '30px', height: '30px' }} // Ajusta el tamaño aquí
+              />
             </div>
           </div>
         </div>
