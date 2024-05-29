@@ -188,7 +188,7 @@ function Service() {
       image: '/dist/images/project2.jpg',
     },
     {
-      image: '../dist/images/project3.jpg',
+      image: '/dist/images/project3.jpg',
     },
   ];
 
