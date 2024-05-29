@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "portafolio-entrega",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,12 +8,19 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+    
   },
   "dependencies": {
-    "i18next": "^23.11.3",
+    "@intlify/unplugin-vue-i18n": "^4.0.0",
+    "i18next": "^23.11.4",
+    "i18next-http-backend": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^14.1.1"
+    "react-i18next": "^14.1.1",
+    "react-router-dom": "^6.23.1",
+    "vue-i18n": "^9.13.1",
+    "vue-i18next": "^0.9.4",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
