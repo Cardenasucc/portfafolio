@@ -10,7 +10,6 @@ import './css/main.css';
 import './css/responsive.css';
 import { useTranslation } from 'react-i18next';
 import './i18n.ts';
-import '../dist';
 
 function Header() {
   const { t, i18n } = useTranslation(); // Hook useTranslation para acceder a las traducciones
